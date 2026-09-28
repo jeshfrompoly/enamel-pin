@@ -31,6 +31,7 @@ const LOGO_OPTIONS = [
   { name: "MLB", url: "/logos/baseball-league.svg" },
   { name: "Yankees", url: "/logos/yankees.svg" },
   { name: "Phillies", url: "/logos/phillies.svg" },
+  { name: "Cubs", url: "/logos/cubs.svg" },
 ] as const;
 type LogoUrl = (typeof LOGO_OPTIONS)[number]["url"];
 

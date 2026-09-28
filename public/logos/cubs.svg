@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="396 35 1180 1180"
+     role="img"
+     aria-labelledby="title desc">
+  <title id="title">Chicago Cubs bullseye enamel pin artwork</title>
+  <desc id="desc">The Cubs bullseye with white regions as exposed metal and blue and red enamel inlays.</desc>
+
+  <g id="metal-backing"
+     data-enamel-role="base"
+     data-metal-base="true"
+     fill="#FFFFFF">
+    <path d="M396 625 A590 590 0 1 1 1576 625 A590 590 0 1 1 396 625 Z"/>
+  </g>
+
+  <g id="blue-enamel"
+     data-enamel-role="fill"
+     data-enamel-color="#0E3386"
+     fill="#0E3386">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M436 625 A550 550 0 1 1 1536 625 A550 550 0 1 1 436 625 Z M580 625 A406 406 0 1 1 1392 625 A406 406 0 1 1 580 625 Z"/>
+  </g>
+
+  <g id="red-enamel"
+     data-enamel-role="fill"
+     data-enamel-color="#CC3433"
+     fill="#CC3433">
+    <path d="M1271.2 413.6 A355 355 0 1 0 1270.0 838.0 L1164.4 739.6 A212 212 0 1 1 1167.9 516.1 Z"/>
+    <path d="M831 531 H895 V660 C895 667 901 673 909 673 C917 673 923 667 923 660 V531 H987 V665 C987 708 972 719 940 719 H871 C843 719 831 705 831 660 Z"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M1010 531 H1112 C1152 531 1165 546 1165 582 C1165 606 1160 618 1147 625 C1160 632 1165 645 1165 668 C1165 705 1150 719 1112 719 H1010 Z M1077 575 H1093 C1102 575 1104 578 1104 583 V593 C1104 599 1100 602 1090 602 H1077 Z M1077 651 H1093 C1101 651 1104 656 1104 664 V668 C1104 676 1101 678 1090 678 H1077 Z"/>
+    <path d="M1235 531 H1285 C1332 529 1345 545 1345 589 H1277 V578 C1277 573 1271 570 1264 570 C1257 570 1251 573 1251 578 V590 C1251 598 1254 602 1260 602 H1306 C1330 602 1345 618 1345 637 V680 C1345 707 1330 719 1295 719 H1218 C1195 719 1188 705 1188 680 V657 H1251 V667 C1251 675 1258 679 1266 679 C1275 679 1281 675 1281 670 V656 C1281 649 1277 645 1270 645 H1222 C1197 645 1188 632 1188 608 V585 C1188 548 1203 531 1235 531 Z"/>
+  </g>
+</svg>

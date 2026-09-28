@@ -1525,12 +1525,19 @@ export default function ExtrudedSVG({
           const outer = sourceShape.getPoints(curveSegments) as THREE.Vector2[];
           if (outer.length < 3) continue;
           const regionBounds = boundsOf(outer);
-          const owner = baseRecords.find(({ bounds }) =>
-            regionBounds.minX >= bounds.minX &&
-            regionBounds.maxX <= bounds.maxX &&
-            regionBounds.minY >= bounds.minY &&
-            regionBounds.maxY <= bounds.maxY,
-          );
+          // Pick the tightest containing metal, so enamel nested inside an
+          // earlier layer's island (the Cubs C inside the blue ring) is cut
+          // from that island rather than from the outer plate beneath it.
+          const boundsArea = ({ minX, maxX, minY, maxY }: ReturnType<typeof boundsOf>) =>
+            (maxX - minX) * (maxY - minY);
+          const owner = baseRecords
+            .filter(({ bounds }) =>
+              regionBounds.minX >= bounds.minX &&
+              regionBounds.maxX <= bounds.maxX &&
+              regionBounds.minY >= bounds.minY &&
+              regionBounds.maxY <= bounds.maxY,
+            )
+            .sort((a, b) => boundsArea(a.bounds) - boundsArea(b.bounds))[0];
           if (!owner) continue;
 
           const reverseOuter =
@@ -1544,8 +1551,15 @@ export default function ExtrudedSVG({
             if (islandPoints.length < 3) continue;
             const reverseIsland =
               (Math.sign(signedArea2D(islandPoints)) || 1) !== owner.winding;
+            const island = cloneCurvePath(sourceHole, reverseIsland, true);
             islandShapeIndices.push(shapes.length);
-            shapes.push(cloneCurvePath(sourceHole, reverseIsland, true));
+            baseRecords.push({
+              shape: island,
+              shapeIndex: shapes.length,
+              bounds: boundsOf(islandPoints),
+              winding: owner.winding,
+            });
+            shapes.push(island);
           }
 
           recessedColorRegions.push({

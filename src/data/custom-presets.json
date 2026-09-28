@@ -1,0 +1,159 @@
+[
+  {
+    "name": "Enamel Pin",
+    "settings": {
+      "Extrusion": {
+        "depthOn": true,
+        "depth": 0.69,
+        "bevelOn": true,
+        "bevelThickness": 0.30000000000000004,
+        "bevelSize": 0.21999999999999997,
+        "bevelSegments": 8,
+        "bevelOffset": 0,
+        "bevelInward": true,
+        "curveSegments": 32,
+        "pathResolution": 12,
+        "cornerRadiusOn": true,
+        "cornerRadius": 0.1,
+        "outerCornerRadius": 0.1,
+        "innerCornerRadius": 0.1,
+        "solidify": false,
+        "solidBack": true,
+        "inflationOn": false,
+        "inflation": 0,
+        "extrudeSteps": 64,
+        "smoothShading": true,
+        "creaseAngle": 82
+      },
+      "Material": {
+        "colorOn": true,
+        "color": "#d0d0d0",
+        "roughnessOn": true,
+        "roughness": 0.17,
+        "metalnessOn": true,
+        "metalness": 1,
+        "clearcoatOn": true,
+        "clearcoat": 1,
+        "clearcoatRoughnessOn": true,
+        "clearcoatRoughness": 0.02,
+        "envMapIntensityOn": true,
+        "envMapIntensity": 3.73,
+        "transmissionOn": false,
+        "transmission": 0,
+        "thicknessOn": false,
+        "thickness": 8.4,
+        "iorOn": false,
+        "ior": 1.5,
+        "dispersionOn": false,
+        "dispersion": 0,
+        "normalMapOn": true,
+        "normalMapType": "rough",
+        "normalScale": 0.1,
+        "displacementScale": 0,
+        "displacementBias": 0,
+        "bloomOn": true,
+        "bloomIntensity": 0.55,
+        "bloomThreshold": 1,
+        "bloomRadius": 0.21000000000000008
+      },
+      "Transform": {
+        "rotationOn": true,
+        "rotationX": 0,
+        "rotationY": 0,
+        "rotationZ": 0,
+        "scaleOn": true,
+        "scale": 0.04
+      },
+      "Lighting": {
+        "keyLightOn": true,
+        "keyLightIntensity": 1.8,
+        "keyLightColor": "#ffffff",
+        "keyLightX": 5,
+        "keyLightY": 5,
+        "keyLightZ": 5,
+        "fillLightOn": true,
+        "fillLightIntensity": 0.7,
+        "fillLightColor": "#ffffff",
+        "fillLightX": -5,
+        "fillLightY": 3,
+        "fillLightZ": -3,
+        "rimLightOn": true,
+        "rimLightIntensity": 1.2,
+        "rimLightColor": "#ffffff",
+        "rimLightX": -2,
+        "rimLightY": -2,
+        "rimLightZ": -5
+      },
+      "Environment": {
+        "enabled": true,
+        "preset": "cave chrome",
+        "rotation": 311,
+        "hdr": false,
+        "hdrBrightness": 1
+      },
+      "Camera": {
+        "fov": 42,
+        "orthographic": false
+      },
+      "Background": {
+        "bgColor": "#ffffff"
+      },
+      "Shadow": {
+        "enabled": true,
+        "offsetX": 0,
+        "offsetY": 8,
+        "blur1": 4,
+        "opacity1": 0.18,
+        "blur2": 16,
+        "opacity2": 0.12,
+        "blur3": 40,
+        "opacity3": 0.08,
+        "blur4": 80,
+        "opacity4": 0.04,
+        "color": "#000000"
+      },
+      "Preview Shadow": {
+        "enabled": true,
+        "distance": 178,
+        "angle": 90,
+        "blur": 71,
+        "opacity": 1,
+        "color": "#000000",
+        "layers": 4
+      },
+      "Post FX": {
+        "aoOn": true,
+        "aoIntensity": 1.95,
+        "aoRadius": 0.5,
+        "aoFalloff": 1,
+        "aoColor": "#000000"
+      },
+      "Enamel Fill": {
+        "enamelOn": true,
+        "enamelColor": "#000000",
+        "enamelOffset": -0.35,
+        "enamelDome": 0.5,
+        "enamelZ": 1.9,
+        "enamelRoughness": 0.23,
+        "enamelMetalness": 0.12,
+        "enamelClearcoat": 0.38,
+        "enamelClearcoatRoughness": 0.11000000000000004,
+        "enamelEnvMapIntensity": 0.14000000000000026
+      },
+      "UV Map": {
+        "offsetX": 0,
+        "offsetY": 0,
+        "repeatX": 4,
+        "repeatY": 4,
+        "rotation": -60,
+        "centerX": 0.22999999999999998,
+        "centerY": 0.5,
+        "wrapS": "repeat",
+        "wrapT": "repeat"
+      },
+      "Fur": {
+        "furOn": false
+      }
+    }
+  }
+]

@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fafafa;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-gt-america);
+  --font-mono: var(--font-gt-america);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-gt-america), -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+/* ─────────────────────────────────────────────
+   Leva — minimal inline sidebar
+   ───────────────────────────────────────────── */
+
+/* Kill shadows/borders on the fill container */
+[id^="leva"] {
+  background: transparent !important;
+}
+
+/* Inputs: softer radius and transitions */
+[id^="leva"] input,
+[id^="leva"] select {
+  border-radius: 5px !important;
+  transition: background-color 120ms ease, border-color 120ms ease !important;
+}
+
+[id^="leva"] input:focus,
+[id^="leva"] select:focus {
+  outline: none !important;
+}
+
+/* Folder title rows: subtle uppercase caps */
+[id^="leva"] [class*="StyledTitle"],
+[id^="leva"] [class*="FolderTitle"] {
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  font-size: 9.5px !important;
+  font-weight: 500 !important;
+  padding-top: 14px !important;
+  padding-bottom: 10px !important;
+}
+
+/* Hairline divider between folders */
+[id^="leva"] [class*="StyledFolder"] + [class*="StyledFolder"] {
+  border-top: 1px solid rgba(0, 0, 0, 0.04) !important;
+  margin-top: 8px !important;
+  padding-top: 8px !important;
+}
+
+/* Row vertical rhythm */
+[id^="leva"] [class*="StyledRow"] {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}
+
+/* Scrollbar */
+[id^="leva"] *::-webkit-scrollbar,
+aside::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+[id^="leva"] *::-webkit-scrollbar-track,
+aside::-webkit-scrollbar-track {
+  background: transparent;
+}
+[id^="leva"] *::-webkit-scrollbar-thumb,
+aside::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: 3px;
+}
+[id^="leva"] *::-webkit-scrollbar-thumb:hover,
+aside::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.22);
+}
+
+/* Hide the per-row copy icons for a cleaner look */
+[id^="leva"] [class*="CopyLabelContainer"] svg {
+  opacity: 0 !important;
+  transition: opacity 120ms ease;
+}
+[id^="leva"] [class*="StyledRow"]:hover [class*="CopyLabelContainer"] svg {
+  opacity: 0.45 !important;
+}

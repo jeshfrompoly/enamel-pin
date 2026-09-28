@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 3840 2160"
+     role="img"
+     aria-labelledby="title desc">
+  <title id="title">Layered baseball enamel pin artwork</title>
+  <desc id="desc">Three flat-color regions prepared as independent layers: white base, navy enamel, and red enamel.</desc>
+
+  <!--
+    Geometry contract for the renderer:
+    - Every direct child group is one material/color layer.
+    - data-enamel-role="base" is the full pin silhouette/backing.
+    - data-enamel-role="fill" groups are enamel inlays rendered above the base.
+    - The navy path uses even-odd fill so the ball remains an exposed white inset.
+  -->
+  <g id="white-base"
+     data-enamel-role="base"
+     data-enamel-color="#FFFFFF"
+     fill="#FFFFFF">
+    <rect x="28" y="65" width="3784" height="2033" rx="290" ry="290"/>
+  </g>
+
+  <g id="navy-enamel"
+     data-enamel-role="fill"
+     data-enamel-color="#062345"
+     fill="#062345">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="
+      M318 168
+      H2317
+      L2954 995
+      L2926 1096
+      C2844 1052 2781 1021 2704 1021
+      L2396 1022
+      C2373 1022 2357 1000 2356 961
+      C2355 928 2357 900 2361 875
+      C2371 876 2379 877 2386 877
+      C2391 877 2396 875 2400 873
+      C2404 836 2405 800 2403 765
+      C2403 628 2365 514 2262 450
+      C2160 367 2022 334 1890 352
+      C1700 377 1580 515 1577 712
+      L1359 863
+      L1624 865
+      C1626 880 1629 895 1633 910
+      L1558 1069
+      C1553 1080 1559 1089 1571 1089
+      L1657 1090
+      C1664 1098 1668 1105 1670 1112
+      C1684 1149 1688 1191 1683 1214
+      C1680 1223 1678 1227 1675 1229
+      C1645 1238 1618 1252 1596 1265
+      C1518 1315 1471 1395 1434 1518
+      C1401 1629 1387 1746 1389 1862
+      H1543
+      L1622 1996
+      H318
+      C215 1996 131 1912 131 1809
+      V356
+      C131 252 215 168 318 168
+      Z
+
+      M698 1562.5
+      A141.5 141.5 0 1 1 415 1562.5
+      A141.5 141.5 0 1 1 698 1562.5
+      Z"/>
+  </g>
+
+  <g id="red-enamel"
+     data-enamel-role="fill"
+     data-enamel-color="#E5142F"
+     fill="#E5142F">
+    <path d="
+      M2618 168
+      H3528
+      C3628 168 3709 251 3709 362
+      V1800
+      C3709 1908 3625 1995 3521 1995
+      H3110
+      V1861
+      H3429
+      C3452 1854 3475 1841 3496 1824
+      C3545 1784 3584 1717 3612 1634
+      C3616 1620 3613 1606 3603 1595
+      L3562 1551
+      C3552 1540 3544 1530 3539 1520
+      L3508 1443
+      C3501 1424 3493 1412 3485 1406
+      L3470 1395
+      C3446 1388 3424 1377 3405 1362
+      L3329 1303
+      V1222
+      L3296 1186
+      L3263 1180
+      L3262 1143
+      L3233 1104
+      L3201 1099
+      V1062
+      L3175 1024
+      L3130 1018
+      L3125 1015
+      Z"/>
+  </g>
+</svg>
+
